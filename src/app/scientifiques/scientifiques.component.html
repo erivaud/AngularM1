@@ -6,6 +6,18 @@
         <li>Nom : {{personne.nom}}</li>
         <li>Découverte : {{personne.decouverte}}: </li>
         <li>Description : {{personne.description}}</li>
+        <div>
+            <label>Nom :</label>
+        <input [(ngModel)]="personne.nom" type="text" class="form-control" /> 
+        </div>
+        <div>
+            <label>Prénom :</label>
+            <input [(ngModel)]="personne.prenom" type="text" class="form-control" />
+        </div>
+        <div>
+            <label>Description :</label>
+            <textarea [(ngModel)]="personne.description" class="form-control" placeholder="description" ></textarea>
+        </div>
         
     </ul>
 </div>
